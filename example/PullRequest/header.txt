@@ -1,0 +1,12 @@
+Request URL: http://21ef-79-178-10-132.ngrok.io/update
+Request method: POST
+Accept: */*
+content-type: application/json
+User-Agent: GitHub-Hookshot/f7bdd04
+X-GitHub-Delivery: 9b9e72b0-40ba-11ec-94c6-a8d53080400e
+X-GitHub-Event: pull_request
+X-GitHub-Hook-ID: 327467754
+X-GitHub-Hook-Installation-Target-ID: 425924467
+X-GitHub-Hook-Installation-Target-Type: repository
+X-Hub-Signature: sha1=d0d2a56018e4e1dae74c18b009006984a62fdedb
+X-Hub-Signature-256: sha256=300d25936956792f14f8c945164f3edc41b96d30f1c85e9bc00c9298fdce35fb

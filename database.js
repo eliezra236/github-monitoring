@@ -6,7 +6,7 @@ mongoose.connect('mongodb://localhost/git-monitoring');
 const pullRequest = new mongoose.Schema({
     _id: String,
     request: Object,
-    screenshotBuffer: Object
+    screenshotBuffer: Buffer
 })
 const pullRequestModel = new mongoose.model('PullRequest', pullRequest)
 module.exports = { pullRequestModel }

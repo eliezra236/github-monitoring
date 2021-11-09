@@ -15,12 +15,10 @@ app.listen(3000, () => {
 
 app.get("/", async (req, res) => {
     const dbResults = await db.pullRequestModel.find();
-    console.log(dbResults);
     res.render("main", {pullRequests: dbResults});
 })
 
-app.post("/update", async (req, res) => {
-    console.log("here");
+app.post("/pullRequest", async (req, res) => {
     const pullRequest = new db.pullRequestModel({_id: req.header("X-GitHub-Delivery"), request: req.body});
     const capture = await capture_website;
     const screenshotBuffer = await capture.default.buffer(req.body.pull_request.html_url);
@@ -28,8 +26,4 @@ app.post("/update", async (req, res) => {
     pullRequest.set("screenshotBuffer", screenshotBuffer);
     await pullRequest.save();
     res.send(true);
-})
-
-app.get("/", (req, res) => {
-
 })

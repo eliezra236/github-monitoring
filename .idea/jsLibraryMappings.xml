@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{bootstrap, bootstrap-table, github, highlight, jquery}" />
+    <file url="PROJECT" libraries="{bootstrap, bootstrap-icons, bootstrap-table, github, highlight, highlightjs-badge, jquery}" />
+    <includedPredefinedLibrary name="Node.js Core" />
   </component>
 </project>
